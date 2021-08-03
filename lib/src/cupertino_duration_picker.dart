@@ -34,12 +34,14 @@ class CupertinoDurationPicker extends StatelessWidget {
   final Duration value;
   final Function(Duration) onChangeValue;
   final Map<TimeUnitName, String> units;
+  final double unitPickerWidth;
 
   CupertinoDurationPicker({
     required this.value,
     required this.onChangeValue,
     this.mainAxisAlignment = MainAxisAlignment.center,
     this.units = const {},
+    this.unitPickerWidth = 120,
     Key? key,
   }) : super(key: key);
 
@@ -65,11 +67,13 @@ class CupertinoDurationPicker extends StatelessWidget {
       mainAxisAlignment: this.mainAxisAlignment,
       children: [
         NumberPicker(
+            itemWidth: 50,
             maxValue: unit.max,
             minValue: unit.min,
             onChanged: (int value) => _onChangedNumber(value, unit),
             value: value.getValueInUnit(unit)),
         WidgetPicker(
+          itemWidth: unitPickerWidth,
           options: units.values.toList(),
           onChanged: _onChangedUnit,
           value: units[value
