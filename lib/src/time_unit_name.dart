@@ -3,4 +3,7 @@ enum TimeUnitName {
   minutes,
   hours,
   days,
+  weeks,
+  months,
+  years,
 }

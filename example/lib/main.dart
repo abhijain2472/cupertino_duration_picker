@@ -55,6 +55,9 @@ class __IntegerExampleState extends State<_IntegerExample> {
         TimeUnitName.minutes: 'Minutes',
         TimeUnitName.hours: 'Hours',
         TimeUnitName.days: 'Days',
+        TimeUnitName.weeks: 'Weeks',
+        TimeUnitName.months: 'Months',
+        TimeUnitName.years: 'Years',
       },
     );
   }

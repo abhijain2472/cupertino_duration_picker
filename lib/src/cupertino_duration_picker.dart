@@ -14,7 +14,19 @@ const Map<TimeUnitName, TimeUnit> _availableUnits = {
   TimeUnitName.hours:
       TimeUnit(name: TimeUnitName.hours, max: 11, min: 1, inSeconds: 60 * 60),
   TimeUnitName.days: TimeUnit(
-      name: TimeUnitName.days, max: 30, min: 1, inSeconds: 60 * 60 * 12),
+      name: TimeUnitName.days, max: 6, min: 1, inSeconds: 60 * 60 * 12),
+  TimeUnitName.weeks: TimeUnit(
+      name: TimeUnitName.weeks, max: 3, min: 1, inSeconds: 60 * 60 * 12 * 7),
+  TimeUnitName.months: TimeUnit(
+      name: TimeUnitName.months,
+      max: 11,
+      min: 1,
+      inSeconds: 60 * 60 * 12 * 7 * 4),
+  TimeUnitName.years: TimeUnit(
+      name: TimeUnitName.years,
+      max: 50,
+      min: 1,
+      inSeconds: 60 * 60 * 12 * 7 * 4 * 12),
 };
 
 class CupertinoDurationPicker extends StatelessWidget {
