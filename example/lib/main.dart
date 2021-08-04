@@ -51,7 +51,7 @@ class __IntegerExampleState extends State<_IntegerExample> {
       onChangeValue: (duration) => setState(() => _duration = duration),
       value: _duration,
       units: {
-        TimeUnitName.seconds: 'Secounds',
+        TimeUnitName.seconds: 'Seconds',
         TimeUnitName.minutes: 'Minutes',
         TimeUnitName.hours: 'Hours',
         TimeUnitName.days: 'Days',

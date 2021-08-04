@@ -12,7 +12,6 @@ extension DurationExtension on Duration {
 
   int getValueInUnit(TimeUnit unit) {
     /// translates the duration to its value in a given unit
-    if (unit.name == TimeUnitName.seconds) return this.inSeconds;
-    return this.inSeconds % unit.inSeconds;
+    return this.inSeconds ~/ unit.inSeconds;
   }
 }

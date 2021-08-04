@@ -1,6 +1,6 @@
 name: cupertino_duration_picker
 description: cupertino_duration_picker is a duration picker inspired by the Google duration picker.
-version: 0.1.0
+version: 0.1.1
 homepage: https://github.com/zvikarp/cupertino_duration_picker
 
 environment:

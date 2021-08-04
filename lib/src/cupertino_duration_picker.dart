@@ -8,7 +8,7 @@ import 'package:widgetpicker/widgetpicker.dart';
 
 const Map<TimeUnitName, TimeUnit> _availableUnits = {
   TimeUnitName.seconds:
-      TimeUnit(name: TimeUnitName.seconds, max: 59, min: 0, inSeconds: 0),
+      TimeUnit(name: TimeUnitName.seconds, max: 59, min: 0, inSeconds: 1),
   TimeUnitName.minutes:
       TimeUnit(name: TimeUnitName.minutes, max: 59, min: 1, inSeconds: 60),
   TimeUnitName.hours:
@@ -48,7 +48,7 @@ class CupertinoDurationPicker extends StatelessWidget {
   final TimeUnit _defaultUnit = _availableUnits[TimeUnitName.seconds]!;
 
   void _onChangedNumber(int value, TimeUnit unit) {
-    Duration duration = Duration(seconds: value + unit.inSeconds);
+    Duration duration = Duration(seconds: value * unit.inSeconds);
     onChangeValue(duration);
   }
 
@@ -56,7 +56,7 @@ class CupertinoDurationPicker extends StatelessWidget {
     TimeUnitName unitName =
         units.entries.firstWhere((element) => element.value == name).key;
     TimeUnit unit = _availableUnits[unitName] ?? _defaultUnit;
-    Duration duration = Duration(seconds: 1 + unit.inSeconds);
+    Duration duration = Duration(seconds: unit.inSeconds);
     onChangeValue(duration);
   }
 
