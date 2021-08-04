@@ -1,7 +1,7 @@
 name: cupertino_duration_picker
-description: A new Flutter package project.
-version: 0.0.1
-homepage:
+description: cupertino_duration_picker is a duration picker inspired by the Google duration picker.
+version: 0.1.0
+homepage: https://github.com/zvikarp/cupertino_duration_picker
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
@@ -16,5 +16,3 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
-flutter:
