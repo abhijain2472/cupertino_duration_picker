@@ -8,9 +8,9 @@ import 'package:widgetpicker/widgetpicker.dart';
 
 const Map<TimeUnitName, TimeUnit> _availableUnits = {
   TimeUnitName.seconds:
-      TimeUnit(name: TimeUnitName.seconds, max: 59, min: 0, inSeconds: 1),
+      TimeUnit(name: TimeUnitName.seconds, max: 59, min: 01 inSeconds: 1),
   TimeUnitName.minutes:
-      TimeUnit(name: TimeUnitName.minutes, max: 59, min: 1, inSeconds: 60),
+      TimeUnit(name: TimeUnitName.minutes, max: 10, min: 1, inSeconds: 60),
   TimeUnitName.hours:
       TimeUnit(name: TimeUnitName.hours, max: 11, min: 1, inSeconds: 60 * 60),
   TimeUnitName.days: TimeUnit(
